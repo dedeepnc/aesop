@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="skincare.css">
+    <title>Aēsop</title>
+    <!-- page icon -->
+    <link rel="shortcut icon" href="img/icon.jpg">
+</head>
+<body>
+    <!-- search -->
+    <form action="">
+        <input type="search">
+        <i class="fa fa-search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></i>
+      </form>
+   <div class="container">
+       <div class="navbar">
+        <a href="index.html"><img src="img/logo.png" class="logo"></a>
+      <nav>
+          <ul>
+            <li><a href="skincare.html">Skincare</a></li>
+            <li><a href="hair.html">Hair</a></li>
+            <li> <a href="body.html">Body</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+      </nav>
+    </div>
+  <br><br>
+<!-- slide -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="img/show1.jpg" style="width:100%">
+        </div>
+       
+        <div class="mySlides fade">
+            <img src="img/show2.jpg" style="width:100%">
+          </div>
+        
+        <div class="mySlides fade">
+          <img src="img/show3.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/show4.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+<br><br><br><br>
+<!-- Best probucts -->
+<div class="best-probucts">
+  <h2>Skincare</h2>
+</div>
+<!-- bestprobucts-box -->
+<div class="bestprobucts-box ">
+  <a href="#">
+      <div class="best best1">
+          <h6><a href="product4.html"><img src="img/best1.png" width="200px" height="250px"></a></h6>
+          <p>Parsley Seed Anti-Oxidant Serum</p>
+          <p>$99.00</p>
+      </div>
+      <div class="best best2">
+          <h6><a href="product6.html"><img src="img/best3.png" width="200px" height="250px"></a></h6>
+          <p>Sublime Replenishing Night Masque</p>
+          <p>$160.00</p>
+      </div>
+      <div class="best skin1">
+        <h6><a href="skincare3.html"><img src="img/skin1.png" width="200px" height="250px"></a></h6>
+        <p>Lightweight Facial Hydrating Serum</p>
+        <p>$87.00</p>
+    </div>
+    <div class="best skin2">
+        <h6><a href="skincare4.html"><img src="img/skin2.png" width="200px" height="250px"></a></h6>
+        <p>Deodorant Roll On</p>
+        <p>$35.00</p>
+    </div>
+    <div class="best skin3">
+      <h6><a href="#"><img src="img/skin3.png" width="200px" height="250px"></a></h6>
+      <p>Moroccan Neroli Post-Shave Lotion</p>
+      <p>$70.00</p>
+  </div>
+  <div class="best skin4">
+      <h6><a href="#"><img src="img/skin4.png" width="200px" height="250px"></a></h6>
+      <p>Moroccan Neroli Shaving Serum</p>
+      <p>$49.00</p>
+  </div>
+  <div class="best skin5">
+    <h6><a href="#"><img src="img/skin5.png" width="200px" height="250px"></a></h6>
+    <p>In Two Minds Facial Hydrator</p>
+      <p>$80.00</p>
+</div>
+<div class="best skin6">
+    <h6><a href="#"><img src="img/skin6.png" width="200px" height="250px"></a></h6>
+    <p>Lucent Facial Concentrate</p>
+      <p>$150.00</p>
+</div>
+<div class="best skin7">
+  <h6><a href="#"><img src="img/skin7.png" width="200px" height="250px"></a></h6>
+  <p>In Two Minds Facial Toner</p>
+      <p>$75.00</p>
+</div>
+<div class="best skin8">
+  <h6><a href="#"><img src="img/skin8.png" width="200px" height="250px"></a></h6>
+  <p>Parsley Seed Cleansing Masque</p>
+      <p>$60.00</p>
+</div>
+<div class="best skin9">
+  <h6><a href="#"><img src="img/skin9.png" width="170px" height="250px"></a></h6>
+  <p>Control</p>
+      <p>$25.00</p>
+</div>
+<div class="best skin10">
+  <h6><a href="#"><img src="img/skin10.png" width="250px" height="270px"></a></h6>
+  <p>Fabulous Face Oil</p>
+      <p>$59.00</p>
+</div>
+<div class="best skin11">
+  <h6><a href="#"><img src="img/skin11.png" width="200px" height="250px"></a></h6>
+  <p>Mandarin Facial Hydrating Cream</p>
+      <p>$55.00</p>
+</div>
+<div class="best skin12">
+  <h6><a href="#"><img src="img/skin12.png" width="200px" height="250px"></a></h6>
+  <p>Protective Lip Balm SPF30</p>
+      <p>$20.00</p>
+</div>
+<div class="best skin13">
+  <h6><a href="#"><img src="img/skin13.png" width="200px" height="250px"></a></h6>
+  <p>Fabulous Face Cleanser</p>
+      <p>$35.00</p>
+</div>
+<div class="best skin14">
+  <h6><a href="#"><img src="img/skin14.png" width="200px" height="270px"></a></h6>
+  <p>Tea Tree Leaf Facial Exfoliant</p>
+      <p>$53.00</p>
+</div>
+<div class="best skin15">
+  <h6><a href="#"><img src="img/skin15.png" width="200px" height="250px"></a></h6>
+  <p>Parsley Seed Anti-Oxidant Eye Cream</p>
+      <p>$119.00</p>
+</div>
+<div class="best skin16">
+  <h6><a href="#"><img src="img/skin16.png" width="140px" height="250px"></a></h6>
+  <p>Remove</p>
+      <p>$33.00</p>
+</div>
+<div class="best skin17">
+  <h6><a href="#"><img src="img/skin17.png" width="200px" height="250px"></a></h6>
+  <p>Petitgrain Reviving Body Gel</p>
+      <p>$53.00</p>
+</div>
+<div class="best skin18">
+  <h6><a href="#"><img src="img/skin18.png" width="200px" height="250px"></a></h6>
+  <p>Blue Chamomile Facial Hydrating Masque</p>
+      <p>$69.00</p>
+</div>
+
+
+
+  </a>  
+  <br>
+<!-- footer -->
+<br>
+<footer>
+    <div class="footer-wrapper">
+        <div class="footer-copyright"><a href="index.html">Aēsop</a></div>
+        <table>
+            <tr>
+              <th>Shop</th>
+              <th>Help</th> 
+              <th>About</th>
+            </tr>
+            <tr>
+              <td><a href="skincare.html">Skincare</a></td>
+              <td><a href="https://assistance.aesop.com/hc/en-sg/requests/new">Contact us</a></td>
+              <td><a href="https://www.facebook.com/Aesop/">Facebook</a></td>
+            </tr>
+            <tr>
+              <td><a href="hair.html">Hair </a></td>
+              <td><a href="https://assistance.aesop.com/hc/en-sg">FAQs</a></td>
+              <td><a href="https://www.instagram.com/aesopskincare/">Instagram</a></td>
+            </tr>
+            <tr>
+              <td><a href="body.html">Body</a></td>
+              <td><a href="https://assistance.aesop.com/hc/en-sg/categories/360000116135-Orders-Shipping">Delivery and returns</a></td>
+              <td><a href="https://twitter.com/aesopskincare">Twitter</a></td>
+            </tr>
+          </table>
+          <br>
+        
+        
+    </div>
+    
+</footer>
+</body>
+</html>  

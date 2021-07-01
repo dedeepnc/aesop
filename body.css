@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5e9;
+  }
+  form{
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid #e2d6ca;
+  }
+  
+  input{
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+  }
+  
+  .fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #301a0d;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+  }
+  
+  form:hover{
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  form:hover input{
+    display: block;
+  }
+  
+  form:hover .fa{
+    color: white;
+  }
+  .container{
+    height: 100vh;
+    background-color: #f5f5e9;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+  }
+  .navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+  }
+  .logo{
+    width: 100px;
+    cursor: pointer;
+  }
+  .nav{
+    flex: 1;
+    text-align: right;
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 200px;
+  }    
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+  }
+  .best-probucts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .best-probucts h2{
+    font-size: 15px;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+    padding: 5px 30px;
+    border: 1px solid #e2d6ca;
+  }
+  .best{
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 30px 20px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  
+  /* footer */
+  .footer-wrapper{
+    border-top: 2px solid #e2d6ca ;  
+    padding: 10px;
+  }
+  .footer-copyright{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 60px;
+  }
+  table{
+    width: 95%;
+  }
+  table, th, td {
+    border-collapse: collapse;
+    margin-left: 25px;
+    font-size: 10px;
+    text-decoration: none;
+  }
+  th, td {
+    padding: 5px;
+    text-align: center;
+  }
+  th {
+    text-align: center;
+  }
+  
